@@ -13,10 +13,10 @@ import (
 	"golang.org/x/net/ipv6"
 
 	iwt "github.com/Arceliar/ironwood/types"
-	"github.com/neilalexander/yggdrasilckr/src/config"
+	"github.com/RiV-chain/RiVPN/src/config"
 
-	"github.com/yggdrasil-network/yggdrasil-go/src/address"
-	"github.com/yggdrasil-network/yggdrasil-go/src/core"
+	"github.com/RiV-chain/RiV-mesh/src/address"
+	"github.com/RiV-chain/RiV-mesh/src/core"
 )
 
 const keyStoreTimeout = 2 * time.Minute

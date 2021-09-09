@@ -12,8 +12,8 @@ import (
 
 	"github.com/gologme/log"
 
-	"github.com/neilalexander/yggdrasilckr/src/config"
-	"github.com/yggdrasil-network/yggdrasil-go/src/address"
+	"github.com/RiV-chain/RiVPN/src/config"
+	"github.com/RiV-chain/RiV-mesh/src/address"
 )
 
 type cryptokey struct {

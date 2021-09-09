@@ -8,14 +8,14 @@ import (
 
 	"github.com/gologme/log"
 
-	"github.com/yggdrasil-network/yggdrasil-go/src/address"
-	"github.com/yggdrasil-network/yggdrasil-go/src/core"
-	"github.com/yggdrasil-network/yggdrasil-go/src/defaults"
-	"github.com/yggdrasil-network/yggdrasil-go/src/multicast"
-	"github.com/yggdrasil-network/yggdrasil-go/src/version"
+	"github.com/RiV-chain/RiV-mesh/src/address"
+	"github.com/RiV-chain/RiV-mesh/src/core"
+	"github.com/RiV-chain/RiV-mesh/src/defaults"
+	"github.com/RiV-chain/RiV-mesh/src/multicast"
+	"github.com/RiV-chain/RiV-mesh/src/version"
 
-	"github.com/neilalexander/yggdrasilckr/src/ckriprwc"
-	"github.com/neilalexander/yggdrasilckr/src/config"
+	"github.com/RiV-chain/RiVPN/src/ckriprwc"
+	"github.com/RiV-chain/RiVPN/src/config"
 
 	_ "golang.org/x/mobile/bind"
 )
