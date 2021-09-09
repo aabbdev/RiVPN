@@ -113,13 +113,13 @@ func (c *cryptokey) addRemoteSubnet(cidr string, dest string) error {
 		return errors.New("unexpected prefix size")
 	}
 
-	// Is the route an Yggdrasil destination?
+	// Is the route an Mesh destination?
 	var addr address.Address
 	var snet address.Subnet
 	copy(addr[:], ipaddr)
 	copy(snet[:], ipnet.IP)
 	if addr.IsValid() || snet.IsValid() {
-		return errors.New("can't specify Yggdrasil destination as crypto-key route")
+		return errors.New("can't specify Mesh destination as crypto-key route")
 	}
 	// Do we already have a route for this subnet?
 	for _, route := range *routingtable {
@@ -167,10 +167,10 @@ func (c *cryptokey) getPublicKeyForAddress(addr address.Address, addrlen int) (e
 		return nil, fmt.Errorf("CKR not enabled")
 	}
 
-	// Check if the address is a valid Yggdrasil address - if so it
+	// Check if the address is a valid Mesh address - if so it
 	// is exempt from all CKR checking
 	if addr.IsValid() {
-		return nil, errors.New("cannot look up CKR for Yggdrasil addresses")
+		return nil, errors.New("cannot look up CKR for Mesh addresses")
 	}
 
 	// Build our references to the routing table and cache
